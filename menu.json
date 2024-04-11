@@ -1,0 +1,362 @@
+{
+  "portions":[
+    {
+      "id":"1",
+      "image":"",
+      "name":"Espetinho de asa",
+      "small_price":"",
+      "medium_price":"8.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"2",
+      "image":"",
+      "name":"Espetinho de Boi",
+      "small_price":"",
+      "medium_price":"7.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"3",
+      "image":"",
+      "name":"Espetinho de Cafta",
+      "small_price":"",
+      "medium_price":"8.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"4",
+      "image":"",
+      "name":"Espetinho de Calabresa",
+      "small_price":"",
+      "medium_price":"7.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"5",
+      "image":"",
+      "name":"Espetinho de Linguiça C/ queijo",
+      "small_price":"",
+      "medium_price":"9.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"5",
+      "image":"",
+      "name":"Espetinho de medalhão",
+      "small_price":"",
+      "medium_price":"10.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"6",
+      "image":"",
+      "name":"Pão de Alho",
+      "small_price":"",
+      "medium_price":"10.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"7",
+      "image":"",
+      "name":"Espetinho de Porco",
+      "small_price":"",
+      "medium_price":"7.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"8",
+      "image":"",
+      "name":"Queijo Coalho",
+      "small_price":"",
+      "medium_price":"8.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"9",
+      "image":"",
+      "name":"Arroz",
+      "small_price":"8.00",
+      "medium_price":"22.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"10",
+      "image":"",
+      "name":"Caldo de Mandioca",
+      "small_price":"",
+      "medium_price":"15.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"11",
+      "image":"",
+      "name":"Carne de Sol C/ Fritas",
+      "small_price":"36.00",
+      "medium_price":"55.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"12",
+      "image":"",
+      "name":"Fritas",
+      "small_price":"17.00",
+      "medium_price":"25.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"13",
+      "image":"",
+      "name":"Jantinha",
+      "small_price":"",
+      "medium_price":"22.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"14",
+      "image":"",
+      "name":"Mandioca",
+      "small_price":"9.00",
+      "medium_price":"15.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"15",
+      "image":"",
+      "name":"Salada",
+      "small_price":"7.00",
+      "medium_price":"12.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"16",
+      "image":"",
+      "name":"Tropeiro",
+      "small_price":"",
+      "medium_price":"15.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"17",
+      "image":"",
+      "name":"Macarrão na chapa",
+      "small_price":"18.00",
+      "medium_price":"23.00",
+      "large_price":"",
+      "description":""
+    }
+  ],
+
+  "drinks":[
+    {
+      "id":"1",
+      "image":"",
+      "name":"Heineken 600 ml",
+      "small_price":"",
+      "medium_price":"15.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"2",
+      "image":"",
+      "name":"Brahma 600 ml",
+      "small_price":"",
+      "medium_price":"10.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"3",
+      "image":"",
+      "name":"Original 600ml",
+      "small_price":"",
+      "medium_price":"11.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"4",
+      "image":"",
+      "name":"Amstel 600 ml",
+      "small_price":"",
+      "medium_price":"9.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"5",
+      "image":"",
+      "name":"Brahma Lata",
+      "small_price":"",
+      "medium_price":"8.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"6",
+      "image":"",
+      "name":"Original Lata",
+      "small_price":"",
+      "medium_price":"8.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"7",
+      "image":"",
+      "name":"Antarctica Lata",
+      "small_price":"",
+      "medium_price":"8.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"8",
+      "image":"",
+      "name":"Budweiser",
+      "small_price":"",
+      "medium_price":"8.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"9",
+      "image":"",
+      "name":"Heineken",
+      "small_price":"",
+      "medium_price":"8.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"10",
+      "image":"",
+      "name":"Heineken",
+      "small_price":"",
+      "medium_price":"8.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"10",
+      "image":"",
+      "name":"Coca-Cola 2L",
+      "small_price":"",
+      "medium_price":"12.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"11",
+      "image":"",
+      "name":"Guaraná 2L",
+      "small_price":"",
+      "medium_price":"10.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"11",
+      "image":"",
+      "name":"Fanta 2L",
+      "small_price":"",
+      "medium_price":"11.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"12",
+      "image":"",
+      "name":"Sprite 2L",
+      "small_price":"",
+      "medium_price":"11.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"13",
+      "image":"",
+      "name":"Coca-Cola Lata",
+      "small_price":"",
+      "medium_price":"6.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"14",
+      "image":"",
+      "name":"Guaraná Lata",
+      "small_price":"",
+      "medium_price":"5.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"15",
+      "image":"",
+      "name":"Sukita Lata",
+      "small_price":"",
+      "medium_price":"5.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"16",
+      "image":"",
+      "name":"Pepsi Lata",
+      "small_price":"",
+      "medium_price":"5.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"17",
+      "image":"",
+      "name":"Coca-Cola Ks",
+      "small_price":"",
+      "medium_price":"4.00",
+      "large_price":"",
+      "description":""
+    },
+    {
+      "id":"18",
+      "image":"",
+      "name":"Coca-Cola Ls",
+      "small_price":"",
+      "medium_price":"8.00",
+      "large_price":"",
+      "description":""
+    }
+  ],
+
+  "hamburgers":[
+    {
+      "id":"1",
+      "image":"",
+      "name":"PO",
+      "small_price":"",
+      "medium_price":"15.00",
+      "large_price":"",
+      "description":"Pão, alface, tomate, hamburquer, queijo"
+    }
+  ]
+  
+}
