@@ -22,8 +22,8 @@
     padding: 20px;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    Max-width: 15rem;
-    min-width: 9rem;
+    Max-width: 18rem;
+    min-width: 10rem;
 }
 
 .title, .section-title, .section-subtitle {
@@ -35,13 +35,15 @@
     font-family: 'Poppins', sans-serif;
     text-align: center; 
     font-weight: bold;
-    font-size: 21px;
-    margin: 0; 
+    font-size: 110%;
+    margin: 5px;
 }
 
 
 .dish-description{
     color: rgba(0, 0, 0, 0.616);
+    font-size: 80%;
+    padding-top: 4%;
     text-align: center;
 }
 
@@ -49,13 +51,14 @@
     font-family: 'Poppins', sans-serif;
     display: grid;
     align-items: center;
-    font-weight: bold;
-    gap: 5px;
-    font-size: 11px;
+    font-weight: 500;
+    font-size: 60%;
 }
 
 .dish-text {
     display: flex;
+    padding: 15px;
+    font-size: 130%;
     flex-direction: column;
     justify-content: flex-start;
 }
@@ -66,6 +69,10 @@
 
 .navbar {
     background-color: #FFF9EA !important;
+}
+
+.large-price {
+    padding-bottom: 3%;
 }
 
 .navbar .btn {
@@ -90,3 +97,6 @@
 .navbar .selected {
     border-bottom: 3px solid rgb(187, 8, 8) !important;
 }
+
+
+
