@@ -6,73 +6,29 @@
     justify-content: center;
 }
 
-#dishes {
+.card {
     display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-top: 32px;
-    border-radius: 10px;
+    flex-direction: row !important;
 }
 
-.dish {
-    flex-direction: flex;
-    align-items: center;
+.img-card {
+    width: 130px;
+    /* height: 40% !important; */
     border-radius: 20px;
-    gap: 18px;
-    padding: 20px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    Max-width: 18rem;
-    min-width: 10rem;
+    border-style: none;
 }
 
-.title, .section-title, .section-subtitle {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+.card-title, .card-subtext {
+    font-size: 13px;
+    font-weight: bolder;
 }
 
-.dish-title {
-    font-family: 'Poppins', sans-serif;
-    text-align: center; 
-    font-weight: bold;
-    font-size: 110%;
-    margin: 5px;
-}
-
-
-.dish-description{
-    color: rgba(0, 0, 0, 0.616);
-    font-size: 80%;
-    padding-top: 4%;
-    text-align: center;
-}
-
-.dish-price{
-    font-family: 'Poppins', sans-serif;
-    display: grid;
-    align-items: center;
-    font-weight: 500;
-    font-size: 60%;
-}
-
-.dish-text {
-    display: flex;
-    padding: 15px;
-    font-size: 130%;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-.img-menu {
-    border-radius: 20px;
+.card-text {
+    font-size: 10px;
 }
 
 .navbar {
     background-color: #FFF9EA !important;
-}
-
-.large-price {
-    padding-bottom: 3%;
 }
 
 .navbar .btn {
@@ -94,9 +50,6 @@
     border-bottom: 3px solid rgb(187, 8, 8) !important;
 }
 
-.navbar .selected {
-    border-bottom: 3px solid rgb(187, 8, 8) !important;
-}
 
 
 
