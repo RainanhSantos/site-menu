@@ -3,221 +3,532 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirapora Delivery</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/styles/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/fontawesome.css">
+    <link rel="stylesheet" href="./src/css/main.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="src/javascript/main.js"></script>
-
-    <title>Adega 01</title>
 </head>
+
 <body>
-    <header>
 
-        <nav id="navbar">
-            <i class="fa-solid fa-wine-bottle " id="nav_logo">Adega 01</i>
-            <ul id="nav_list">
-                <li class="nav-item active"><a href="#home">Início</a></li>
-                <li class="nav-item"><a href="#menu">Cardápio</a></li>
-                <li class="nav-item"><a href="#testimonials">Avaliações</a></li>
-            </ul>
-            <button class="btn-default">peça aqui</button>
-        </nav>
+    <a class="botao-carrinho">
+        <div class="badge-total-carrinho">8</div>
+        <i class="fa fa-shopping-bag"></i>
+    </a>
 
-        <div id="mobile_menu">
-            <ul id="mobile_nav_list">
-                <li class="nav-item">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#menu">Cardápio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#testimonials">Avaliações</a>
-                </li>
-            </ul>
-            <button class="btn-default">
-                peça aqui
+    <section class="header">
+       <div class="container">
+        <nav class="navbar navbar-expand-lg pl-0 pr-0">
+            <a class="navbar-brand" href="#">
+                <img class="img-logo" src="./src/img/logo.png" width="160">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon">
+                    <i class="fas fa-bars">
+
+                    </i>
+                </span>
             </button>
-        </div>
+            <div class="collapse navbar-collapse" id="#navbarNavDropdown">
+                <ul class="navbar-nav ml-auto mr-auto">
+                    <li class="nav-item">
+                        <a href="#reservations" class="nav-link"><b>Reserva</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link"><b>Serviços</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link"><b>Cardapio</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reservations" class="nav-link"><b>Depoimentos</b></a>
+                    </li>
+                </ul>
+                <a class="btn btn-white btn-icon">
+                    <div class="badge-total-carrinho">8</div>
+                    Meu carrinho <span class="icon">
+                        <i class="fa fa-shopping-bag"></i>
+                    </span>
+                </a>
+            </div>
+        </nav>
+       </div> 
+    </section>
 
-    </header>
-
-    <main id="content">
-        
-        <section id="home">
-            <div id="cta">
-                <h1 class="title">
-                    O sabor vai até
-                    <span>Você</span>
-                </h1>
-                <p id="description">Bem-vindo à nossa adega, onde os melhores vinhos acompanham os mais deliciosos hambúrgueres.</p>
-                <div id="cta_buttons">
-                    <a href="#" class="btn-default">Ver cardápio</a>
-                    <a href="tel:+038998612796" id="phone_button">
-                        <button class="btn-default">
-                            <i class="da-solid fa-phone"></i>
-                        </button>
-                        (38) 9 9861-2796
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="d-flex text-banner">
+                        <h1><b>Escolha sua comida <b class="color-primary">favorita</b></b></h1>
+                        <p>
+                            Aproveite o nosso cardápio! Escolha o que desejar e receba em sua casa de forma rápida e segura.
+                        </p>
+                        <div>
+                            <a class="btn btn-yellow mt-4 mr-3">
+                                Ver cardápio
+                            </a>
+                            <a href="#" class="btn btn-white btn-icon-left mt-4">
+                                <span class="icon-left">
+                                    <i class="fa fa-phone"></i>
+                                </span>
+                                (38) 9 99373577
+                            </a>
+                        </div>
+                    </div>
+                    <a class="btn btn-sm btn-white btn-social mt-4 mr-3">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-sm btn-white btn-social mt-4 mr-3">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-sm btn-white btn-social mt-4">
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
-                <div class="social-media-buttons">
-                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-
-            <div id="banner">
-                <img src="src/images/lancheInicio.png" alt="">
-            </div>
-        </section>
-
-        <section id="menu" class="container-fluid ">
-
-            <h2 class="section-title text-justify">Cardápio</h2>
-            <h3 class="section-subtitle text-center">Nossos pratos especiais</h3>
-
-            <nav class="navbar bg-light">
-                <form class="form-inline">
-                  <button class="btn btn-sm btn-outline-secondary mb-3 m-0" type="button">Porções</button>
-                  <button class="btn btn-sm btn-outline-secondary mb-3 m-0" type="button">Hambúrgues</button>
-                  <button class="btn btn-sm btn-outline-secondary mb-3 m-0" type="button">Bebidas</button>
-                  <button class="btn btn-sm btn-outline-secondary mb-3 m-0" type="button">Drinks</button>
-                </form>
-            </nav>
-              
-                <div class="container-fluid">
-
-                    <div class="cards row card-deck">
-
-                        <div class="col-md-6">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título do card</h5>
-                                    <p class="card-text">Este é um card maior com suporte a texto </p>
-                                    <p><small class="card-subtext">R$ 20,00</small></p>
-                                </div>
-                                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/f53e85b4-80c9-4d06-a735-b49c2b5a5da9/202208091310_13HV_i.jpg" alt="..." class="img-card img-thumbnail">
-                            </div>
+                <div class="col-6">
+                    <div class="card-banner">
+                        <div class="d-flex img-banner">
+                            <img src="./src/img/burguer.png">
                         </div>
-                        <div class="col-md-6">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título do card</h5>
-                                    <p class="card-text">Este é um card maior com suporte a texto </p>
-                                    <p><small class="card-subtext">R$ 20,00</small></p>
-                                </div>
-                                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/f53e85b4-80c9-4d06-a735-b49c2b5a5da9/202208091310_13HV_i.jpg" alt="..." class="img-card img-thumbnail">
-                            </div>
+                        <div class="card card-case">
+                            "Entrega rápida e funcionarios simpaticos.
+                            <br>A comida chegou quente e <br>
+                            Muito saborosa"
+                            <span class="card-case-name">
+                                <b>Rainanh Geovany</b>
+                            </span>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título do card</h5>
-                                    <p class="card-text">Este é um card maior com suporte a texto </p>
-                                    <p><small class="card-subtext">R$ 20,00</small></p>
-                                </div>
-                                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/f53e85b4-80c9-4d06-a735-b49c2b5a5da9/202208091310_13HV_i.jpg" alt="..." class="img-card img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título do card</h5>
-                                    <p class="card-text">Este é um card maior com suporte a texto </p>
-                                    <p><small class="card-subtext">R$ 20,00</small></p>
-                                </div>
-                                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/f53e85b4-80c9-4d06-a735-b49c2b5a5da9/202208091310_13HV_i.jpg" alt="..." class="img-card img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título do card</h5>
-                                    <p class="card-text">Este é um card maior com suporte a texto </p>
-                                    <p><small class="card-subtext">R$ 20,00</small></p>
-                                </div>
-                                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/f53e85b4-80c9-4d06-a735-b49c2b5a5da9/202208091310_13HV_i.jpg" alt="..." class="img-card img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título do card</h5>
-                                    <p class="card-text">Este é um card maior com suporte a texto </p>
-                                    <p><small class="card-subtext">R$ 20,00</small></p>
-                                </div>
-                                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/f53e85b4-80c9-4d06-a735-b49c2b5a5da9/202208091310_13HV_i.jpg" alt="..." class="img-card img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título do card</h5>
-                                    <p class="card-text">Este é um card maior com suporte a texto </p>
-                                    <p><small class="card-subtext">R$ 20,00</small></p>
-                                </div>
-                                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/f53e85b4-80c9-4d06-a735-b49c2b5a5da9/202208091310_13HV_i.jpg" alt="..." class="img-card img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título do card</h5>
-                                    <p class="card-text">Este é um card maior com suporte a texto </p>
-                                    <p><small class="card-subtext">R$ 20,00</small></p>
-                                </div>
-                                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/f53e85b4-80c9-4d06-a735-b49c2b5a5da9/202208091310_13HV_i.jpg" alt="..." class="img-card img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título do card</h5>
-                                    <p class="card-text">Este é um card maior com suporte a texto </p>
-                                    <p><small class="card-subtext">R$ 20,00</small></p>
-                                </div>
-                                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/f53e85b4-80c9-4d06-a735-b49c2b5a5da9/202208091310_13HV_i.jpg" alt="..." class="img-card img-thumbnail">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card mb-3">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título do card</h5>
-                                    <p class="card-text">Este é um card maior com suporte a texto </p>
-                                    <p><small class="card-subtext">R$ 20,00</small></p>
-                                </div>
-                                <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/f53e85b4-80c9-4d06-a735-b49c2b5a5da9/202208091310_13HV_i.jpg" alt="..." class="img-card img-thumbnail">
-                            </div>
-                        </div>
-                        
-                        
                     </div>
-
                 </div>
-           
-        </section>
-    </main>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="background-servicos"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <span class="hint-title"><b>Serviços</b></span>
+                    <h1 class="title">
+                        <b>Como são nossos serviços?</b>
+                    </h1>
+                </div>
+                <div class="col-4 mb-5">
+                    <div class="card-icon text-center">
+                        <img src="./src/img/icone-pedido.svg" width="150">
+                    </div>
+                    <div class="card-text text-center mt-3">
+                        <p><b>Fácil de pedir</b></p>
+                        <span>
+                            Você só precisa de alguns passos para pedir sua comida.
+                        </span>
+                    </div>
+                </div>
+                <div class="col-4 mb-5">
+                    <div class="card-icon text-center">
+                        <img src="./src/img/icone-delivery.svg" width="250">
+                    </div>
+                    <div class="card-text text-center mt-3">
+                        <p><b>Entrega rápida</b></p>
+                        <span>
+                            Nossa entrega é sempre pontual, rápida e segura.
+                        </span>
+                    </div>
+                </div>
+                <div class="col-4 mb-5">
+                    <div class="card-icon text-center">
+                        <img src="./src/img/icone-qualidade.svg" width="250">
+                    </div>
+                    <div class="card-text text-center mt-3">
+                        <p><b>Melhor qualidade</b></p>
+                        <span>
+                            Não só a rapidez na entrega, a qualidade também é o nosso forte.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <div class="background-menu"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <span class="hint-title"><b>Cardápio</b></span>
+                    <h1 class="title">
+                        <b>Como conheça o nosso cardápio</b>
+                    </h1>
+                </div>
+                <div class="col-12 container-menu">
+                    <a id="menu-burgers" class="btn btn-white btn-sm mr-3 active" onclick="cardapio.metodos.obterItensCardapio('burgers')">
+                        <i class="fas fa-hamburger"></i> &nbsp; Burges
+                    </a>
+                    <a id="menu-pizzas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('pizzas')">
+                        <i class="fas fa-pizza-slice"></i> &nbsp; Pizzas
+                    </a>
+                    <a id="menu-churrasco" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('churrasco')">
+                        <i class="fas fa-drumstick-bite"></i> &nbsp; Churrasco
+                    </a>
+                    <a id="menu-steaks" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('steaks')">
+                        <i class="fas fa-bacon"></i> &nbsp; Steaks
+                    </a>
+                    <a id="menu-bebidas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('bebidas')">
+                        <i class="fas fa-cocktail"></i> &nbsp; Bebidas
+                    </a>
+                    <a id="menu-sobremesas" class="btn btn-white btn-sm mr-3" onclick="cardapio.metodos.obterItensCardapio('sobremesas')">
+                        <i class="fas fa-ice-cream"></i> &nbsp; Sobremesas
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div class="row" id="itensCardapio">
+
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <a id="btnVerMais" class="btn btn-white btn-sm" onclick="cardapio.metodos.verMais()">Ver mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimony" id="reservations">
+        <div class="background-testimony"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-5 text-center">
+                    <div class="card-testimony"></div>
+                    <div class="d-flex img-banner">
+                        <img src="./src/img/pizzas.png" alt="">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <span class="hint-title"><b>Depoimentos</b></span>
+                    <h1 class="title">
+                        <b>O que dizem sobre nós?</b>
+                    </h1>
+                    <div class="mb-5">
+                        <div class="testimony" id="testimony-1">
+                            <div class="container-data-testimony">
+                                <div class="image-testimony"></div>
+                                <div>
+                                    <p class="name-testimony"><b>Ilgner Becheleni</b></p>
+                                    <p class="note-testimony">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>&nbsp; <span>4.5</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-testimony">
+                                <i class="fas fa-quote-left"></i>
+                                <span>Muito bom, recomendo de mais! Comida muito bem feita,
+                                    atendimento detro dos parâmetros e boa comunicação com o cliente.</span>
+                                <i class="fas fa-quote-right"></i>
+                            </p>
+                            <a class="btn btn-sm btn-white btn-social mr-3 active">1</a>
+                            <a class="btn btn-sm btn-white btn-social mr-3">2</a>
+                            <a class="btn btn-sm btn-white btn-social">3</a>
+                        </div>
+                        <div class="testimony hidden" id="testimony-2">
+                            <div class="container-data-testimony">
+                                <div class="image-testimony"></div>
+                                <div>
+                                    <p class="name-testimony"><b>Rainanh Geovany</b></p>
+                                    <p class="note-testimony">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>&nbsp; <span>5.0</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-testimony">
+                                <i class="fas fa-quote-left"></i>
+                                <span>Um jantar perfeito do começo ao fim. Comida, experiência, serviço...</span>
+                                <i class="fas fa-quote-right"></i>
+                            </p>
+                        </div>
+                        <div class="testimony hidden" id="testimony-3">
+                            <div class="container-data-testimony">
+                                <div class="image-testimony"></div>
+                                <div>
+                                    <p class="name-testimony"><b>Natalia Almeida</b></p>
+                                    <p class="note-testimony">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>&nbsp; <span>4.0</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="text-testimony">
+                                <i class="fas fa-quote-left"></i>
+                                <span>A comida estava excelente e o serviço gentil nos surpreendeu!
+                                    Dica. Reserve umas 3 horas para ter uma experiencia incrível.
+                                </span>
+                                <i class="fas fa-quote-right"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="reserve" id="reservations">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-secundary">
+                        <div class="row">
+                            <div class="col-7">
+                                <span class="hint-title"><b>Reserva</b></span>
+                                <h1 class="title">
+                                    <b>Quer reservar um horário?</b>
+                                </h1>
+                                <p class="pr-5">
+                                    Mande uma mensagem clicando no botão abaixo
+                                    <br>
+                                    Reserve sua data e horário de forma simples e rápida.
+                                </p>
+                                <a class="btn btn-yellow mt-4">
+                                    Fazer reserva
+                                </a>
+                            </div>
+                            <div class="col-5">
+                                <div class="card-reserve"></div>
+                                <div class="d-flex img-banner">
+                                    <img src="./src/img/icone-reserva.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <img src="src/images/wave.svg" alt="">
-        <div id="footer_items">
-            <span id="copyright">&copy 2024 R&G Tech</span>
-            <div class="social-media-buttons">
-                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <div class="container">
+            <div class="row">
+                <div class="container-logo-footer col-3">
+                    <img class="logo-footer" src="./src/img/logo.png">
+                </div>
+                <div class="container-texto-footer col-6">
+                    <p class="mb-0">
+                        <b>Pirapora Delivery</b> &copy; Todos os direitos reservados
+                    </p>
+                </div>
+                <div class="container-redes-footer col-3">
+                    <a class="btn btn-sm btn-white btn-social mr-3">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-sm btn-white btn-social mr-3">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-sm btn-white btn-social">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <script src="src/javascript/nav_bar.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <div class="modal-full hidden" id="modalCart">
+        <div class="m-header">
+            <div class="container">
+                <a class="btn btn-white btn-sm float-right">Fechar</a>
+                <div class="phases">
+                    <div class="stage stage1 active">1</div>
+                    <div class="stage stage2">2</div>
+                    <div class="stage stage3">3</div>
+                </div>
+                <p class="title-cart mt-4">
+                    <b id="lblTitleStage">Seu carrinho</b>
+                </p>
+            </div>
+        </div>
+        <div class="m-body">
+            <div class="container">
+                <div class="row mr-0 ml-0 hidden" id="cartItems">
+                    <div class="col-12 cart-items">
+                        <div class="img-produto">
+                            <img src="./src/img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg">
+                        </div>
+                            <div class="product-data">
+                                <p class="title-produto"><b>Nome do produto</b></p>
+                                <p class="price-produto"><b>R$ 149,90</b></p>
+                            </div>
+                            <div class="add-carrinho">
+                                <span class="btn-menos"><i class="fas fa-minus"></i></span>
+                                <span class="add-numero-itens">0</span>
+                                <span class="btn-mais"><i class="fas fa-plus"></i></span>
+                                <span class="btn btn-remove"><i class="fa fa-times"></i></span>
+                            </div>
+                    </div>
+                </div>
+                <div class="row mr-0 ml-0 hidden" id="deliveryLocation">
+                    <div class="col-4">
+                        <div class="form-group container-cep">
+                            <label>CEP:</label>
+                            <input is="txtCEP" type="text" class="form-control">
+                            <a class="btn btn-yellow btn-sm"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-8"></div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Endereço:</label>
+                            <input id="txtEndereco" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label>Bairro:</label>
+                            <input id="txtBairro" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-group">
+                            <label>Número:</label>
+                            <input id="txtNumero" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label>Cidade:</label>
+                            <input id="txtCidade" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label>Complemento:</label>
+                            <input id="txtComplemento" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-group">
+                            <label>UF:</label>
+                            <select id="ddlUF" class="form-control">
+                                <option value="-1">...</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mr-0 ml-0" id="cartSummary">
+                    <div class="col-12">
+                        <p class="title-carrinho mt-4">
+                            <b>Itens do pedido</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row" id="listaItensResumo">
+                        <div class="col-12 cart-items resumo">
+                            <div class="img-produto-resumo">
+                                <img src="./src/img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg">
+                            </div>
+                            <div class="product-data">
+                                <p class="title-produto-resumo"><b>Nome do produto</b></p>
+                                <p class="price-produto-resumo"><b>R$ 100,00</b></p>
+                            </div>
+                            <p class="quantidade-produto-resumo">
+                                x <b>3</b>
+                            </p>
+                        </div>
+                    </div>
+                </div> 
 
+                <div class="col-12">
+                    <p class="title-carrinho mt-4">
+                        <b>Local da entrega</b>
+                    </p>
+                </div>
+
+                <div class="col-12 resumo">
+                    <div class="img-map">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="dados-produto">
+                        <p class="texto-endereco">
+                            <b id="resumoEndereco">Rua teste, 200, bairro teste</b>
+                        </p>
+                        <p class="cidade-endereco" id="cidadeEndereco">
+                            Cidade-Pirapora / 39270-000
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="m-footer">
+            <div class="container">
+                <div class="container-total text-right mb-4">
+                    <p class="mb-0">
+                        <span>Subtotal:</span>
+                        <span id="lblSubTotal">R$ 95,00</span>
+                    </p>
+                    <p class="mb-0 texto-entrega">
+                        <span><i class="fas fa-motorcycle"></i> Entrega:</span>
+                        <span id="lblValorEntrega">R$ 5,00</span>
+                    </p>
+                    <p class="mb-0 text-total">
+                        <span><b>Total</b></span>
+                        <span class="valor-total" id="lblValorTotal"><b>R$ 100,00</b></span>
+                    </p>
+                </div>
+            </div>
+            <div class="btn btn-yellow float-right" id="btnEtapaPedido">Continuar</div>
+            <div class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">Revisar pedido</div>
+            <div class="btn btn-yellow float-right hidden" id="btnEtapaResumo">Enviar pedido</div>
+            <div class="btn btn-white float-right mr-3 hidden" id="btnVoltar">Voltar</div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./src/javascript/imports/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./src/javascript/imports/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./src/javascript/imports/modernizr-3.5.0.min.js"></script>
+    <script type="text/javascript" src="./src/javascript/imports/popper.min.js"></script>
+
+    <script type="text/javascript" src="./src/javascript/dados.js"></script>
+    <script type="text/javascript" src="./src/javascript/app.js"></script>
+    
 </body>
-</html>
 
+</html>
