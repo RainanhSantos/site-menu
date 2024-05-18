@@ -104,18 +104,128 @@ cardapio.metodos = {
                     let objIndex = MEU_CARRINHO.findIndex((obj => obj.id == id));
                     MEU_CARRINHO[objIndex].qntd = MEU_CARRINHO[objIndex].qntd + qntdAtual;
                 }
+
                 //caso ainda não exista o item no carrinho, adiciona ele
                 else {
                     item[0].qntd = qntdAtual;
                     MEU_CARRINHO.push(item[0]);
                 }
 
-                
+                cardapio.metodos.mensagem('Item adicionado ao carrinho', 'green');
                 $("#qntd-" + id).text(0);
+
+                cardapio.metodos.atualizarBadgeTotal();
 
             };
         };
         
+    },
+
+    //atualiza o badge de totais dos botões do carrinho
+    atualizarBadgeTotal: () => {
+        var total = 0;
+
+        $.each(MEU_CARRINHO, (i, e) => {
+            total+= e.qntd;
+        });
+
+        if(total > 0 ){
+            $(".botao-carrinho").removeClass('hidden');
+            $(".container-total-carrinho").removeClass('hidden');
+        }
+        else {
+            $(".botao-carrinho").addClass('hidden');
+            $(".container-total-carrinho").addClass('hidden');
+        }
+
+        $(".badge-total-carrinho").html(total);
+    },
+
+    //abrir a modal de carrinho
+    abrirCarrinho: (abrir) => {
+        if(abrir) {
+            $("#modalCart").removeClass('hidden');
+            cardapio.metodos.carregarEtapa(1);
+        }
+        else{
+            $("#modalCart").addClass('hidden');
+        }
+    },
+    //altera os textos e exibe os botões das etapas
+    carregarEtapa: (etapa) => {
+        if( etapa == 1) {
+            $("#lblTituloEtapa").text('Seu carrinho:');
+            $("#cartItems").removeClass('hidden');
+            $("#deliveryLocation").addClass('hidden');
+            $("#cartSummary").addClass('hidden');
+
+            $(".stage").removeClass('active');
+            $(".stage1").addClass('active');
+
+            $("#btnEtapaPedido").removeClass('hidden');
+            $("#btnEtapaEndereco").addClass('hidden');
+            $("#btnEtapaResumo").addClass('hidden');
+            $("#btnVoltar").addClass('hidden');
+        }
+
+        if(etapa == 2) {
+            $("#lblTituloEtapa").text('Endereço de entrega:');
+            $("#cartItems").addClass('hidden');
+            $("#deliveryLocation").removeClass('hidden');
+            $("#cartSummary").addClass('hidden');
+
+            $(".stage").removeClass('active');
+            $(".stage1").addClass('active');
+            $(".stage2").addClass('active');
+
+            $("#btnEtapaPedido").addClass('hidden');
+            $("#btnEtapaEndereco").removeClass('hidden');
+            $("#btnEtapaResumo").addClass('hidden');
+            $("#btnVoltar").removeClass('hidden');
+        }
+
+        if(etapa == 3) {
+            $("#lblTituloEtapa").text('Resumo do pedido:');
+            $("#cartItems").addClass('hidden');
+            $("#deliveryLocation").addClass('hidden');
+            $("#cartSummary").removeClass('hidden');
+
+            $(".stage").removeClass('active');
+            $(".stage1").addClass('active');
+            $(".stage2").addClass('active');
+            $(".stage3").addClass('active');
+
+            $("#btnEtapaPedido").addClass('hidden');
+            $("#btnEtapaEndereco").addClass('hidden');
+            $("#btnEtapaResumo").removeClass('hidden');
+            $("#btnVoltar").removeClass('hidden');
+        }
+    },
+    //botão para voltar etapa
+    voltarEtapa: () => {
+        let etapa = $(".stage.active").length;
+
+        cardapio.metodos.carregarEtapa(etapa - 1);
+    },
+
+
+
+
+    //mensagens
+    mensagem: (texto, cor = 'red', tempo = 3500) => {
+
+        let id = Math.floor(Date.now() * Math.random().toString());
+
+        let msg = `<div id="msg-${id}" class="animated fadeInDown toast ${cor}">${texto}</div>`
+        $("#container-mensagens").append(msg);
+
+        setTimeout(() => {
+            $("#msg-" + id).removeClass('fadeInDown');
+            $("#msg-" + id).addClass('fadeOutUp');
+            setTimeout(() => {
+                $("#msg-" + id).remove();
+            }, 800);
+        }, tempo);
     },
 
 }
