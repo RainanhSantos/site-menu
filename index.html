@@ -245,7 +245,7 @@
                             <div class="container-data-testimony">
                                 <div class="image-testimony"></div>
                                 <div>
-                                    <p class="name-testimony"><b>Rainanh Geovany</b></p>
+                                    <p class="name-testimony"><b>Thalisson Gabriel</b></p>
                                     <p class="note-testimony">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -305,7 +305,7 @@
                                     <br>
                                     Reserve sua data e horário de forma simples e rápida.
                                 </p>
-                                <a class="btn btn-yellow mt-4">
+                                <a class="btn btn-yellow mt-4" href="#" id="btnReserva" target="_blank">
                                     Fazer reserva
                                 </a>
                             </div>
@@ -365,28 +365,16 @@
         <div class="m-body">
             <div class="container">
                 <div class="row mr-0 ml-0 hidden" id="cartItems">
-                    <div class="col-12 cart-items">
-                        <div class="img-produto">
-                            <img src="./src/img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg">
-                        </div>
-                            <div class="product-data">
-                                <p class="title-produto"><b>Nome do produto</b></p>
-                                <p class="price-produto"><b>R$ 149,90</b></p>
-                            </div>
-                            <div class="add-carrinho">
-                                <span class="btn-menos"><i class="fas fa-minus"></i></span>
-                                <span class="add-numero-itens">0</span>
-                                <span class="btn-mais"><i class="fas fa-plus"></i></span>
-                                <span class="btn btn-remove"><i class="fa fa-times"></i></span>
-                            </div>
-                    </div>
+
                 </div>
                 <div class="row mr-0 ml-0 hidden" id="deliveryLocation">
                     <div class="col-4">
                         <div class="form-group container-cep">
                             <label>CEP:</label>
-                            <input is="txtCEP" type="text" class="form-control">
-                            <a class="btn btn-yellow btn-sm"><i class="fa fa-search"></i></a>
+                            <input id="txtCEP" type="text" class="form-control">
+                            <a class="btn btn-yellow btn-sm" onclick="cardapio.metodos.buscarCep()">
+                                <i class="fa fa-search"></i>
+                            </a>
                         </div>
                     </div>
                     <div class="col-8"></div>
@@ -465,18 +453,7 @@
                 </div>
                 <div class="col-12">
                     <div class="row" id="listaItensResumo">
-                        <!-- <div class="col-12 cart-items resumo">
-                            <div class="img-produto-resumo">
-                                <img src="./src/img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg">
-                            </div>
-                            <div class="product-data">
-                                <p class="title-produto-resumo"><b>Nome do produto</b></p>
-                                <p class="price-produto-resumo"><b>R$ 100,00</b></p>
-                            </div>
-                            <p class="quantidade-produto-resumo">
-                                x <b>3</b>
-                            </p>
-                        </div> -->
+
                     </div>
                 </div> 
 
@@ -492,11 +469,9 @@
                     </div>
                     <div class="dados-produto">
                         <p class="texto-endereco">
-                            <b id="resumoEndereco">Rua teste, 200, bairro teste</b>
+                            <b id="resumoEndereco"></b>
                         </p>
-                        <p class="cidade-endereco" id="cidadeEndereco">
-                            Cidade-Pirapora / 39270-000
-                        </p>
+                        <p class="cidade-endereco" id="cidadeEndereco"></p>
                     </div>
                 </div>
                 
@@ -507,27 +482,27 @@
                 <div class="container-total text-right mb-4">
                     <p class="mb-0">
                         <span>Subtotal:</span>
-                        <span id="lblSubTotal">R$ 95,00</span>
+                        <span id="lblSubTotal">R$ 0,00</span>
                     </p>
                     <p class="mb-0 texto-entrega">
                         <span><i class="fas fa-motorcycle"></i> Entrega:</span>
-                        <span id="lblValorEntrega">R$ 5,00</span>
+                        <span id="lblValorEntrega">R$ 0,00</span>
                     </p>
                     <p class="mb-0 text-total">
                         <span><b>Total</b></span>
-                        <span class="valor-total" id="lblValorTotal"><b>R$ 100,00</b></span>
+                        <span class="valor-total"><b id="lblValorTotal">R$ 0,00</b></span>
                     </p>
                 </div>
             </div>
-            <div onclick="cardapio.metodos.carregarEtapa(2)" class="btn btn-yellow float-right" id="btnEtapaPedido">Continuar</div>
-            <div onclick="cardapio.metodos.carregarEtapa(3)" class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">Revisar pedido</div>
-            <div class="btn btn-yellow float-right hidden" id="btnEtapaResumo">Enviar pedido</div>
-            <div onclick="cardapio.metodos.voltarEtapa()" class="btn btn-white float-right mr-3 hidden" id="btnVoltar">Voltar</div>
+            <a onclick="cardapio.metodos.carregarEndereco()" class="btn btn-yellow float-right" id="btnEtapaPedido">Continuar</a>
+            <a onclick="cardapio.metodos.resumoPedido()" class="btn btn-yellow float-right hidden" id="btnEtapaEndereco">Revisar pedido</a>
+            <a href="#" class="btn btn-yellow float-right hidden" id="btnEtapaResumo" target="_blank">Enviar pedido</a>
+            <a onclick="cardapio.metodos.voltarEtapa()" class="btn btn-white float-right mr-3 hidden" id="btnVoltar">Voltar</a>
         </div>
     </div>
 
-    <script type="text/javascript" src="./src/javascript/imports/bootstrap.min.js"></script>
     <script type="text/javascript" src="./src/javascript/imports/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="./src/javascript/imports/bootstrap.min.js"></script>
     <script type="text/javascript" src="./src/javascript/imports/modernizr-3.5.0.min.js"></script>
     <script type="text/javascript" src="./src/javascript/imports/popper.min.js"></script>
 
