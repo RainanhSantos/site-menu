@@ -15,6 +15,7 @@ cardapio.eventos = {
     init: () => {
         cardapio.metodos.obterItensCardapio();
         cardapio.metodos.carregarBotaoReserva();
+        cardapio.metodos.carregarBotaoLigar();
     }
 };
 
@@ -498,6 +499,29 @@ cardapio.metodos = {
         $("#btnReserva").attr('href', URL);
 
     },
+
+    //carrega o botão de ligar
+    carregarBotaoLigar: () => {
+
+        $("#btnLigar").attr('href', `tel:${CELULCAR_EMPRESA}`);
+
+    },
+
+    //abre o depoimento
+    abrirDepoimento: (depoimento) => {
+
+        $("#testimony-1").addClass('hidden');
+        $("#testimony-2").addClass('hidden');
+        $("#testimony-3").addClass('hidden');
+
+        $("#btnDepoimento-1").removeClass('active');
+        $("#btnDepoimento-2").removeClass('active');
+        $("#btnDepoimento-3").removeClass('active');
+
+        $("#testimony-" + depoimento).removeClass('hidden');
+        $("#btnDepoimento-" + depoimento).addClass('active');
+
+    },
     
 
 
@@ -524,7 +548,7 @@ cardapio.metodos = {
 
 cardapio.templates = {
     item: `
-            <div class="col-3 mb-3">
+            <div class="col-12 col-lg-3 col-md-3 col-sm-6 mb-3 animated fadeInUp">
             <div class="card card-item" id="\${id}">
                 <div class="img-produto">
                     <img src="\${img}"/>
@@ -559,7 +583,7 @@ cardapio.templates = {
                     <span class="btn-menos" onclick="cardapio.metodos.diminuirQuantidadeCarrinho('\${id}')"><i class="fas fa-minus"></i></span>
                     <span class="add-numero-itens" id="qntd-carrinho-\${id}">\${qntd}</span>
                     <span class="btn-mais" onclick="cardapio.metodos.aumentarQuantidadeCarrinho('\${id}')"><i class="fas fa-plus"></i></span>
-                        <span class="btn btn-remove" onclick="cardapio.metodos.removerItemCarrinho('\${id}')"><i class="fa fa-times"></i></span>
+                        <span class="btn btn-remove no-mobile" onclick="cardapio.metodos.removerItemCarrinho('\${id}')"><i class="fa fa-times"></i></span>
                     </div>
             </div>
     `,

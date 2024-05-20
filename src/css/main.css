@@ -246,7 +246,7 @@ a.navbar-brand {
 }
 
 .card-item {
-    height: 410px;
+    height: 445px;
 }
 
 .card-item .img-produto img {
@@ -341,7 +341,7 @@ a.navbar-brand {
 
 .testimony {
     padding-top: 100px;
-    padding-bottom: 150px;
+    
 }
 
 .card-testimony {
@@ -578,7 +578,7 @@ footer {
 
 .modal-full .title-produto {
     color: var(--color-black);
-    font-size: 20px;
+    font-size: 1px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
